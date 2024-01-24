@@ -1,0 +1,67 @@
+---
+title: "Working with Markdown"
+author: "Franny Oppenheimer"
+date: "2024-01-23"
+output: 
+  html_document: 
+    theme: spacelab
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+For markdown, use asterisks to *indicate italic text*
+
+Double line return for a new chunk of text like this
+
+Name  
+Department of Biology  
+University of Vermont  
+
+# Hash marks for headers
+
+## More hashes for progressively
+
+### smaller
+
+#### and smaller
+
+##### headers!!
+
+
+**bold face this way**
+
+>Offset quote which embeds and looks really nice when you have extended material that you would like to see
+
+Back to plain text
+
+* first line item  
+* second item  
+   - spacing for indents
+   
+^superscript^ or ~subscript~
+
+[set up a link with text](website address)
+
+also footnotes^[at bottom of page]
+
+
+# Also Tables!
+
+First Header  | Second Header
+------------- | -------------
+Content Cell  | Content Cell
+Content Cell  | Content Cell
+
+```
+fencing sets boundaries and everything inside the fencing *is shown as literal text* without rendering
+```
+
+$$a + b =c$$
+
+we can also use Latex in line with a single dollar sign $a +b=c$ like this
+
+## subscripts in LaTex
+
+$$ H_0 = Z_{a + b}$$
