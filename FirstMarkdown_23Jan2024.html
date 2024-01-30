@@ -442,8 +442,48 @@ extended material that you would like to see</p>
 <p><span class="math display">\[a + b =c\]</span></p>
 <p>we can also use Latex in line with a single dollar sign <span class="math inline">\(a +b=c\)</span> like this</p>
 <div id="subscripts-in-latex" class="section level2">
-<h2>subscripts in LaTex</h2>
+<h2>Subscripts in LaTex</h2>
 <p><span class="math display">\[ H_0 = Z_{a + b}\]</span></p>
+</div>
+<div id="rendering-in-plain-text" class="section level2">
+<h2>Rendering in Plain Text</h2>
+<p><span class="math display">\[P(occurrence Of Species A) =
+Z\]</span></p>
+<p>use curly brackets whenever we have amounts of text to get rid of
+italics</p>
+<p><span class="math display">\[P(\mbox{Occurrence of Species A}) =
+Z\]</span></p>
+<p>easy to embed LaTex in line like <span class="math inline">\(4 + 4 =
+8\)</span></p>
+<p>we can also use markdown fencing in line with a single backtick like
+<code>4 + 4 = 8</code></p>
+<p>it’s just a stylistic choice</p>
+<p>We can even execute r code inside of markdown text: 8 (&lt;-that said
+4 + 4)</p>
+<p>use r as the first character inside to accomplish this</p>
+</div>
+<div id="imbedding-r-code" class="section level2">
+<h2>Imbedding R Code</h2>
+<p>backtick backtick backtick squiggly bracket r squiggly bracket</p>
+<p>your R code!</p>
+<p>backtick backtick backtick</p>
+<pre class="r"><code>#r ```{r eval=TRUE, echo=TRUE}
+# eval is whether we&#39;re showing the output
+# echo is whether we&#39;re showing the code
+
+# Use comments extensively in your coding!
+Pred &lt;- seq(1,10)       # make a vector of integers from 1 to 10
+Res &lt;- runif(10)        # generate 10 draws from a random uniform (0,1) distribution
+
+# Print the random numbers
+print(Res)</code></pre>
+<pre><code>##  [1] 0.6658200 0.5922502 0.2614206 0.1051715 0.9457815 0.3806179 0.8331724
+##  [8] 0.7954255 0.6765002 0.4873137</code></pre>
+<pre class="r"><code># first chunk of code in rmd file
+print(pi)</code></pre>
+<pre><code>## [1] 3.141593</code></pre>
+<pre class="r"><code>pi + 3</code></pre>
+<pre><code>## [1] 6.141593</code></pre>
 </div>
 </div>
 <div class="footnotes footnotes-end-of-document">

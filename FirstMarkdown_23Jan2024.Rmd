@@ -62,6 +62,61 @@ $$a + b =c$$
 
 we can also use Latex in line with a single dollar sign $a +b=c$ like this
 
-## subscripts in LaTex
+## Subscripts in LaTex
 
 $$ H_0 = Z_{a + b}$$
+
+## Rendering in Plain Text
+
+$$P(occurrence Of Species A) = Z$$
+
+use curly brackets whenever we have amounts of text to get rid of italics
+
+$$P(\mbox{Occurrence of Species A}) = Z$$
+ 
+  
+easy to embed LaTex in line like $4 + 4 = 8$
+
+we can also use markdown fencing in line with a single backtick like `4 + 4 = 8`
+
+it's just a stylistic choice
+
+We can even execute r code inside of markdown text: `r 4 + 4` (<-that said 4 + 4)
+
+use r as the first character inside to accomplish this
+
+## Imbedding R Code
+
+backtick backtick backtick squiggly bracket r squiggly bracket
+
+your R code!
+
+backtick backtick backtick
+
+
+```{r}
+
+#r ```{r eval=TRUE, echo=TRUE}
+# eval is whether we're showing the output
+# echo is whether we're showing the code
+
+# Use comments extensively in your coding!
+Pred <- seq(1,10)       # make a vector of integers from 1 to 10
+Res <- runif(10)        # generate 10 draws from a random uniform (0,1) distribution
+
+# Print the random numbers
+print(Res)
+```
+
+```{r}
+
+# first chunk of code in rmd file
+print(pi)
+pi + 3
+
+
+```
+
+
+
+
