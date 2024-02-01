@@ -44,6 +44,3 @@ z <- 3 + 4
 print(z)
 
 
-
-z <- 'penis'
-print(z)
